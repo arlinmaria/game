@@ -1,0 +1,73 @@
+*{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.game{
+	background-color: #7fffd4;
+	width: 500px;
+	height: 200px;
+	border:1px solid black;
+	margin: auto;
+}
+
+#character{
+	width: 30px;
+	height: 50px;
+	background-image: url("https://thumbs.dreamstime.com/b/illustration-cute-rabbit-cartoon-isolated-white-background-cute-rabbit-cartoon-isolated-white-background-113194593.jpg");
+	background-size: 30px 50px;
+	position: relative;
+	top: 150px;
+}
+
+.animate{
+	animation:jump 0.3s linear;
+
+}
+
+@keyframes jump{
+	0%{
+		top: 150px;
+	}
+	30%{
+		top: 90px;
+	}
+
+     70%{
+     	top: 90px;
+     }
+     100%{
+     	top: 150px;
+     }
+
+}
+
+
+#block{
+	width: 240px;
+	height: 40px;
+	background-image:url("https://previews.123rf.com/images/tigatelu/tigatelu1304/tigatelu130400132/19287800-funny-lion-cartoon.jpg");
+	background-size: 20px 40px;
+	position: relative;
+	top: 110px;
+	left: 500px;
+	animation: block 1s infinite linear;
+}
+
+@keyframes block{
+	0%{
+		left: 500px;
+	}
+	100%{
+		left: -20px
+	}
+}
+
+
+p{
+	text-align: center;
+}
+
+
+
